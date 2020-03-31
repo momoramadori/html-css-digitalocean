@@ -5,10 +5,11 @@
         <title>DigitalOcean</title>
         <script src="https://kit.fontawesome.com/a41fcd4d62.js" crossorigin="anonymous"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Sen:400,700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
         <link rel="stylesheet" href="style.css">
     </head>
+    <!-- Controllare indentatura -->
     <body>
         <header class="navbar-fixed-top">
             <nav id="header-top" class="navbar navbar-default">
@@ -16,10 +17,10 @@
                 <div class="navbar-header">
                     <ul class="nav navbar-nav navbar-left">
                         <li class="li-top-left hidden-xs">
-                            <a href="#"><span>New</span> Working on something related to COVID-19? DigitalOcean would like to help ❯</a>
+                            <a href="#"><span class="text-uppercase">New</span> Working on something related to COVID-19? DigitalOcean would like to help ❯</a>
                         </li>
-                        <li class="li-top-left visible-xs-*">
-                            <a href="#"><span>New</span> Working on  COVID-19? Help There! ❯</a>
+                        <li class="li-top-left visible-xs-* hidden-sm hidden-md hidden-lg">
+                            <a href="#"><span class="text-uppercase">New</span> Working on  COVID-19? Help There! ❯</a>
                         </li>
                     </ul>
                 </div>
@@ -39,12 +40,13 @@
                   </a>
                 </div>
                 <div class="collapse navbar-collapse" >
-                    <ul class="nav navbar-nav">
-                        <li><a href="#">Products</a></li>
+                    <ul class="bottom-menu nav navbar-nav">
+                        <li><a href="#">Products <i class="fas fa-angle-down"></i></a>
+                        </li>
                         <li><a href="#">Marketplace</a></li>
-                        <li><a href="#">Cstomers</a></li>
+                        <li><a href="#">Customers</a></li>
                         <li><a href="#">Partners</a></li>
-                        <li><a href="#">Community</a></li>
+                        <li><a href="#">Community <i class="fas fa-angle-down"></i></a></li>
                         <li><a href="#">Pricing</a></li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
@@ -59,7 +61,8 @@
                 <div class="container-fluid">
                     <div class="navbar-header">
                         <a class="navbar-brand" href="#">
-                            <img class="img-responsive" src="img/digitalocean-2white.svg" alt="logo">
+                            <!-- Sistemare logo white -->
+                            <img class="img-responsive" src="img/digitalocean-2.svg" alt="logo">
                         </a>
                     </div>
                     <ul class="nav navbar-nav navbar-right">
@@ -69,31 +72,37 @@
             </nav>
             <div class="container">
                 <div class="row">
-                    <div class="col-xs-12 col-sm-6">
-                        <h1>Welcome to the developer cloud</h1>
+                    <div class="col-xs-12 col-sm-6 jumbo-text">
+                        <h1 class="h1">Welcome to the developer cloud</h1>
                         <p>We make it simple to launch in the cloud and scale up as you grow – with an intuitive control panel, predictable pricing, team accounts, and more.</p>
                     </div>
-                    <form class="col-xs-12 col-sm-6">
-                         <div class="form-group">
-                            <label for="exampleInputEmail1">Email address</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                    <div class="form-wrapper text-center col-xs-12 col-sm-5 col-sm-offset-1">
+                        <form>
+                            <h3>Deploy in Seconds</h3>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="inputname" placeholder="Full Name">
+                            </div>
+                             <div class="form-group">
+                                <input type="email" class="form-control" id="inputemail" placeholder="Email">
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control" id="inputpass" placeholder="Create a password">
+                            </div>
+                            <button type="submit" class="col-xs-12 btn btn-primary create-btn">Create your account</button>
+                        </form>
+                        <div class="divider text-center col-xs-12">
+                            <span>or sign up with</span>
                         </div>
-                        <div class="form-group">
-                            <label for="exampleInputPassword1">Password</label>
-                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-                        </div>
-                        <div class="form-group">
-                            <label for="exampleInputFile">File input</label>
-                            <input type="file" id="exampleInputFile">
-                            <p class="help-block">Example block-level help text here.</p>
-                        </div>
-                        <div class="checkbox">
-                            <label>
-                              <input type="checkbox"> Check me out
-                            </label>
-                        </div>
-                        <button type="submit" class="btn btn-default">Submit</button>
-                    </form>
+                        <button type="button" class="btn btn-default btn-lg">
+                            <i class="col-xs-2 fab fa-google"></i>
+                            <span class="col-xs-8">Google</span>
+                        </button>
+                        <button type="button" class="btn btn-default btn-lg">
+                            <i class="col-xs-2 fab fa-github"></i>
+                            <span class="col-xs-8">GitHub</span>
+                        </button>
+                        <span class="small">By signing up you agree to the <a href="#">Terms of Service</a>.</span>
+                    </div>
                 </div>
             </div>
         </section>

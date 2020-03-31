@@ -1,4 +1,8 @@
 
+body {
+    font-family: 'Sen', sans-serif;
+}
+
 section {
     padding-top: 100px;
     padding-bottom: 100px;
@@ -6,19 +10,26 @@ section {
 
 /* Header Style */
 
-#header-bottom .navbar-brand img {
-    height: 25px;
-}
-
 .navbar {
     margin-bottom: 0px;
     min-height: 40px;
+    border-radius: 0;
 }
+.navbar-fixe-top {
+    border-radius: 0;
+}
+#header-bottom .navbar-brand img {
+    height: 30px;
+}
+
 #header-top {
     font-size: 12px;
 }
+
 #header-top .navbar-nav>.li-top-right>a, .navbar-nav>.li-top-left>a   {
     margin: 0 1px 0 2px;
+    font-weight: 600;
+    color: #5b6987;
 }
 
 #header-top .navbar-nav>.li-top-right>a {
@@ -29,6 +40,32 @@ section {
     padding: 10px 0;
 }
 
+#header-top .li-top-left span {
+    background-color: rgb(0, 215, 210);
+    color: black;
+    padding: 2px 3px;
+    border-radius: 4px;
+    font-weight: 500;
+}
+
+#header-bottom .bottom-menu>li>a {
+    color: black;
+    font-weight: 600;
+}
+
+#header-top .li-top-left>a:hover ,
+#header-bottom .bottom-menu>li>a:hover {
+    color: rgb(0, 73, 255);
+}
+
+#header-top .li-top-right>a:hover {
+    color: #5b6987;
+}
+
+#header-bottom .bottom-menu>li>a,
+#header-bottom .navbar-brand {
+    padding-top: 20px;
+}
 #header-bottom .navbar-brand {
     padding-top: 10px;
     margin-right: 20px;
@@ -40,6 +77,14 @@ section {
     margin-top: 10px;
     margin-bottom: 10px;
     margin-right: 15px;
+    color: rgb(0, 73, 255);
+    border-color: rgb(0, 73, 255);
+    font-weight: 600;
+}
+
+#header-bottom .navbar-nav>li>.btn:hover {
+    background-color: rgb(0, 73, 255);
+    color: white;
 }
 
 /* Jumbotron Style */
@@ -49,12 +94,16 @@ section {
     color: white;
 }
 
+#jumbotron #fake-header i {
+    opacity: 0.5;
+}
 #jumbotron .navbar-default {
     background-color: rgba(0,0,0,0);
     border-color: rgba(0,0,0,0) ;
 }
 #jumbotron .navbar-right>li {
     margin-right: 15px;
+    margin-top: 6px;
     line-height: 52px;
     font-size: 25px;
     float: right;
@@ -72,18 +121,122 @@ section {
 }
 
 #jumbotron .navbar-brand img {
-    height: 50px;
+    height: 30px;
+    background-color: white;
 }
 
+
+#jumbotron .jumbo-text {
+    margin-top: 100px;
+}
+#jumbotron .form-wrapper {
+    background-color: white;
+    border-radius: 5px;
+    padding: 25px;
+    color: #5b6987;
+}
+
+#jumbotron .form-control {
+    padding: 20px 12px;
+    border: 1px solid #eee;
+    font-size: 16px;
+}
+
+#jumbotron h1 {
+    font-size: 54px;
+    font-weight: bold;
+}
+
+#jumbotron h3 {
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+#jumbotron p {
+    font-size: 24px;
+    color: rgb(161, 186, 255);
+}
+
+.divider {
+    position: relative;
+    padding: 15px 0;
+}
+
+.divider::before,
+.divider::after {
+    content: "";
+    position: absolute;
+    width: calc((100% - 120px) / 2);
+    top: 50%;
+    transform: translateY(-50%);
+    height: 0.5px;
+    background-color: #ddd;
+}
+
+.divider::before {
+    left: 0;
+}
+
+.divider::after {
+    right: 0;
+}
+
+#jumbotron .create-btn {
+    color: white;
+    background-color: rgb(0, 73, 255);
+    padding: 10px 0;
+}
+
+#jumbotron .create-btn:hover {
+    background-color: blue;
+}
+
+#jumbotron .btn-lg {
+    width: calc((100% - 35px) / 2);
+}
+
+#jumbotron .btn-lg span {
+    font-weight: bold;
+}
+
+#jumbotron .btn-lg:first-of-type {
+    margin-right: 30px;
+}
+
+#jumbotron .btn-default {
+    background: #f2f8ff;
+    border: 1px solid rgba(0,105,255,.2);
+}
+
+#jumbotron .btn-default:hover {
+    background: #d5e4f7;
+}
+
+#jumbotron .small {
+    padding-top: 30px;
+    display: inline-block;
+    margin-top: 15px;
+}
+#jumbotron .small a {
+    text-decoration: underline;
+    color: rgb(0, 73, 255);
+}
 @media (max-width:768px) {
     .container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header {
     margin: 0;
     }
+
     #header-top .navbar-nav, #jumbotron .navbar-nav {
         margin: 0;
     }
 }
 
+@media (max-width:992px) {
+    #jumbotron h1 {
+        font-size: 40px;
+    }
+}
 @media (min-width:992px) {
     #jumbotron {
         padding-top: 200px;
