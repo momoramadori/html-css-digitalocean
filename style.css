@@ -338,6 +338,52 @@ section .h2 {
     color: rgb(168, 175, 193);
 }
 
+/* design section style */
+
+#design {
+    background-color: rgb(243, 245, 249);
+    padding-top: 100px;
+}
+
+#design .img-wrapper {
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#design .img-wrapper::before,
+#design .img-wrapper::after {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-family: "Font Awesome 5 Free";
+    font-weight: 700;
+    font-size: 50px;
+}
+
+#design .img-wrapper::before {
+    left: 5%;
+    content:"\f104";
+    color: rgb(168, 175, 193);
+}
+
+#design .img-wrapper::after {
+    right: 5%;
+    content: " \f105";
+    color: rgb(3, 26, 77);
+}
+
+#design .h2 {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+#design a {
+    font-size: 10px;
+    padding: 4px;
+    color: #0069ff;
+}
+
 @media (max-width:768px) {
     .container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header {
     margin: 0;
@@ -349,6 +395,11 @@ section .h2 {
 
     #jumbotron .btn-lg {
         padding-left: 10px;
+    }
+
+    #design .img-wrapper::before,
+    #design .img-wrapper::after {
+        content: "";
     }
 }
 
