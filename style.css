@@ -408,6 +408,22 @@ section .h5 {
 #building a i {
     vertical-align: middle;
 }
+
+/* Services section style */
+
+#services {
+    padding-top: 100px;
+    background-color: rgb(3, 26, 77);
+    color: white;
+}
+
+#services .table-responsive {
+    border: 0;
+}
+
+#services tr:first-child, #services tr:first-child th, #services tr:first-child td {
+    border-top: 0;
+}
 @media (max-width:480px) {
     .col-xxs-10 {
         width: calc(( 100% / 12) * 10);
