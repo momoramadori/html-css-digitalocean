@@ -4,10 +4,19 @@ body {
 }
 
 section:not(#logos) {
-    padding-top: 100px;
     padding-bottom: 100px;
 }
 
+section .h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+section .h2 {
+    font-size: 20px;
+    color: rgb(158, 165, 181);
+}
 /* Header Style */
 
 .navbar {
@@ -156,7 +165,7 @@ section:not(#logos) {
     font-weight: bold;
 }
 
-#jumbotron h3 {
+#jumbotron h4 {
     color: black;
     font-size: 30px;
     font-weight: bold;
@@ -262,7 +271,7 @@ section:not(#logos) {
     object-fit: contain;
 }
 
-#logos h2 {
+#logos p {
     color: rgb(168, 175, 193);
     font-weight: bold;
 }
@@ -279,6 +288,54 @@ section:not(#logos) {
 
 #logos a i {
     vertical-align: middle;
+}
+
+/* Deploy section style */
+
+#deploy {
+    padding-top: 100px;
+}
+
+#deploy .row:nth-of-type(2) {
+    margin-top: 40px;
+}
+
+#deploy ul {
+    padding-inline-start: 0px;
+}
+#deploy ul>li {
+    list-style-type: none;
+    padding: 15px 15px;
+    border-left: 1px solid rgb(168, 175, 193);
+}
+
+#deploy ul>li:first-of-type {
+    border-left: 1px solid #0069ff;
+}
+
+#deploy ul>li>a {
+    color: rgb(168, 175, 193);
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+#deploy ul>li:first-of-type>a {
+    color: rgb(3, 26, 77);
+}
+
+#deploy ul>li>a:hover {
+    color: rgb(3, 26, 77);
+}
+
+#deploy .h4 {
+    font-size: 20px;
+    color: rgb(3, 26, 77);
+}
+
+#deploy .h5 {
+    font-size: 18px;
+    color: rgb(168, 175, 193);
 }
 
 @media (max-width:768px) {
