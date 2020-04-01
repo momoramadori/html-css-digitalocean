@@ -3,7 +3,7 @@ body {
     font-family: 'Sen', sans-serif;
 }
 
-section {
+section:not(#logos) {
     padding-top: 100px;
     padding-bottom: 100px;
 }
@@ -15,15 +15,21 @@ section {
     min-height: 40px;
     border-radius: 0;
 }
-.navbar-fixe-top {
+.navbar-fixed-top {
     border-radius: 0;
 }
-#header-bottom .navbar-brand img {
-    height: 30px;
+#header-bottom .navbar-brand svg {
+    fill: #0069ff;
 }
 
 #header-top {
     font-size: 12px;
+}
+
+#header-top .li-top-left {
+    height: 40px;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 #header-top .navbar-nav>.li-top-right>a, .navbar-nav>.li-top-left>a   {
@@ -53,6 +59,9 @@ section {
     font-weight: 600;
 }
 
+#header-bottom .bottom-menu>li>a>i {
+    vertical-align: middle;
+}
 #header-top .li-top-left>a:hover ,
 #header-bottom .bottom-menu>li>a:hover {
     color: rgb(0, 73, 255);
@@ -120,15 +129,15 @@ section {
     float: left;
 }
 
-#jumbotron .navbar-brand img {
-    height: 30px;
-    background-color: white;
+#jumbotron .navbar-brand svg {
+    fill: white;
 }
-
-
+/* sistemare margin-top del form e del testo */
 #jumbotron .jumbo-text {
     margin-top: 100px;
+    margin-bottom: 20px;
 }
+
 #jumbotron .form-wrapper {
     background-color: white;
     border-radius: 5px;
@@ -209,6 +218,10 @@ section {
     border: 1px solid rgba(0,105,255,.2);
 }
 
+#jumbotron .btn-default i {
+    padding-left: 0;
+}
+
 #jumbotron .btn-default:hover {
     background: #d5e4f7;
 }
@@ -222,6 +235,52 @@ section {
     text-decoration: underline;
     color: rgb(0, 73, 255);
 }
+
+/* Logos section style */
+
+#logos {
+    background-color: rgb(243, 245, 249);
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.logo-container {
+    height: 50px;
+}
+
+#logos .row > div:first-child {
+    margin-bottom: 20px;
+}
+
+#logos .row > div:last-child {
+    margin-top: 20px;
+}
+
+#logos img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+#logos h2 {
+    color: rgb(168, 175, 193);
+    font-weight: bold;
+}
+
+#logos a {
+    font-size: 16px;
+    color: #0069ff;
+}
+
+#logos a:hover {
+    color: #0069ff;
+    text-decoration: none;
+}
+
+#logos a i {
+    vertical-align: middle;
+}
+
 @media (max-width:768px) {
     .container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header {
     margin: 0;
@@ -230,13 +289,23 @@ section {
     #header-top .navbar-nav, #jumbotron .navbar-nav {
         margin: 0;
     }
+
+    #jumbotron .btn-lg {
+        padding-left: 10px;
+    }
 }
+
 
 @media (max-width:992px) {
     #jumbotron h1 {
         font-size: 40px;
     }
+
+    .jumbo-text, .form-wrapper {
+        margin-top: 50px;
+    }
 }
+
 @media (min-width:992px) {
     #jumbotron {
         padding-top: 200px;
