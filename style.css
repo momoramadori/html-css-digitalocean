@@ -338,21 +338,29 @@ section .h5 {
     color: rgb(3, 26, 77);
 }
 
-/* design section style */
+/* Design & Devteams section's style */
 
-#design {
+#design, #devteams {
     background-color: rgb(243, 245, 249);
     padding-top: 100px;
 }
 
-#design .img-wrapper {
+#design .img-wrapper, #devteams .box-wrapper  {
     position: relative;
     margin-top: 20px;
     margin-bottom: 20px;
 }
 
+#devteams .box-wrapper>div {
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid  rgb(168, 175, 193);
+}
+
 #design .img-wrapper::before,
-#design .img-wrapper::after {
+#design .img-wrapper::after,
+#devteams .box-wrapper::before,
+#devteams .box-wrapper::after {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -361,30 +369,67 @@ section .h5 {
     font-size: 50px;
 }
 
-#design .img-wrapper::before {
+#design .img-wrapper::before,
+#devteams .box-wrapper::before {
     left: 5%;
     content:"\f104";
     color: rgb(168, 175, 193);
 }
 
-#design .img-wrapper::after {
+#design .img-wrapper::after,
+#devteams .box-wrapper::after {
     right: 5%;
     content: " \f105";
     color: rgb(3, 26, 77);
 }
 
-#design .h2 {
+#design .h3 {
     font-size: 16px;
     margin-bottom: 20px;
+    color: rgb(168, 175, 193);
 }
 
-#design a {
+#design a, #devteams a {
     font-size: 10px;
     padding: 4px;
     color: #0069ff;
 }
 
-/* Builing section style */
+#devteams p a {
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+#devteams img {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    max-width: 100%;
+}
+
+#devteams .h2 {
+    font-size: 24px;
+    font-weight: lighter;
+}
+
+#devteams .small {
+    color: rgb(168, 175, 193);
+    font-size: 16px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#devteams .small span {
+    font-size: 14px;
+}
+
+#devteams .box-wrapper a {
+    font-size: 16px;
+}
+
+#devteams .box-wrapper>div>div {
+    margin-bottom: 50px;
+}
+/* Building section style */
 
 #building {
     margin-top: 100px;
@@ -424,6 +469,7 @@ section .h5 {
 #services tr:first-child, #services tr:first-child th, #services tr:first-child td {
     border-top: 0;
 }
+
 @media (max-width:480px) {
     .col-xxs-10 {
         width: calc(( 100% / 12) * 10);
@@ -446,7 +492,9 @@ section .h5 {
     }
 
     #design .img-wrapper::before,
-    #design .img-wrapper::after {
+    #design .img-wrapper::after,
+    #devteams .box-wrapper::before,
+    #devteams .box-wrapper::after {
         content: "";
     }
 }
