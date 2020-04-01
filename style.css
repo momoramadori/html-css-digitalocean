@@ -3,10 +3,6 @@ body {
     font-family: 'Sen', sans-serif;
 }
 
-section:not(#logos) {
-    padding-bottom: 100px;
-}
-
 section .h1 {
     font-size: 36px;
     font-weight: bold;
@@ -27,7 +23,7 @@ section .h5 {
     color: rgb(168, 175, 193);
 }
 
-/* Header Style */
+/* Header section's style */
 
 .navbar {
     margin-bottom: 0px;
@@ -115,9 +111,10 @@ section .h5 {
     color: white;
 }
 
-/* Jumbotron Style */
+/* Jumbotron section's style */
 #jumbotron {
     padding-top: 41px;
+    padding-bottom: 100px;
     background-image: url(img/bgf.jpg);
     color: white;
 }
@@ -255,7 +252,7 @@ section .h5 {
     color: rgb(0, 73, 255);
 }
 
-/* Logos section style */
+/* Logos section's style */
 
 #logos {
     background-color: rgb(243, 245, 249);
@@ -300,10 +297,11 @@ section .h5 {
     vertical-align: middle;
 }
 
-/* Deploy section style */
+/* Deploy section's style */
 
 #deploy {
     padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 #deploy .row:nth-of-type(2) {
@@ -343,6 +341,7 @@ section .h5 {
 #design, #devteams {
     background-color: rgb(243, 245, 249);
     padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 #design .img-wrapper, #devteams .box-wrapper  {
@@ -426,13 +425,18 @@ section .h5 {
     font-size: 16px;
 }
 
+#devteams .box-wrapper a:hover {
+    text-decoration: none;
+}
+
 #devteams .box-wrapper>div>div {
     margin-bottom: 50px;
 }
-/* Building section style */
+/* Building section's style */
 
 #building {
-    margin-top: 100px;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 #svg-strano {
@@ -454,10 +458,11 @@ section .h5 {
     vertical-align: middle;
 }
 
-/* Services section style */
+/* Services section's style */
 
 #services {
     padding-top: 100px;
+    padding-bottom: 100px;
     background-color: rgb(3, 26, 77);
     color: white;
 }
@@ -468,6 +473,31 @@ section .h5 {
 
 #services tr:first-child, #services tr:first-child th, #services tr:first-child td {
     border-top: 0;
+}
+
+/* Cta section's style */
+
+#cta {
+    background-image: url(img/bgf.jpg);
+    background-position: bottom;
+    color: white;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+#cta .h1 {
+    font-size: 30px;
+}
+
+#cta .btn {
+    color: #0069ff;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 10px 24px;
+}
+
+#cta .btn:hover {
+    opacity: 0.7;
 }
 
 @media (max-width:480px) {
