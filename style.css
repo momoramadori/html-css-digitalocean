@@ -43,8 +43,6 @@ section .h5 {
 
 #header-top .li-top-left {
     height: 40px;
-    overflow: hidden;
-    text-overflow: ellipsis;
 }
 
 #header-top .navbar-nav>.li-top-right>a, .navbar-nav>.li-top-left>a   {
@@ -114,7 +112,7 @@ section .h5 {
 /* Jumbotron section's style */
 #jumbotron {
     padding-top: 41px;
-    padding-bottom: 100px;
+    padding-bottom: 70px;
     background-image: url(img/bgf.jpg);
     color: white;
 }
@@ -300,8 +298,8 @@ section .h5 {
 /* Deploy section's style */
 
 #deploy {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 70px;
+    padding-bottom: 70px;
 }
 
 #deploy .row:nth-of-type(2) {
@@ -340,8 +338,8 @@ section .h5 {
 
 #design, #devteams {
     background-color: rgb(243, 245, 249);
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 70px;
+    padding-bottom: 70px;
 }
 
 #design .img-wrapper, #devteams .box-wrapper  {
@@ -405,6 +403,10 @@ section .h5 {
     max-width: 100%;
 }
 
+#design img {
+    border: 1px;
+}
+
 #devteams .h2 {
     font-size: 24px;
     font-weight: lighter;
@@ -435,8 +437,8 @@ section .h5 {
 /* Building section's style */
 
 #building {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 70px;
+    padding-bottom: 70px;
 }
 
 #svg-strano {
@@ -461,9 +463,11 @@ section .h5 {
 /* Services section's style */
 
 #services {
-    padding-top: 100px;
-    padding-bottom: 100px;
-    background-color: rgb(3, 26, 77);
+    padding-top: 70px;
+    padding-bottom: 70px;
+    background: #031b4e url(img/map.svg);
+    background-position: center;
+    background-repeat: no-repeat;
     color: white;
 }
 
@@ -473,8 +477,21 @@ section .h5 {
 
 #services tr:first-child, #services tr:first-child th, #services tr:first-child td {
     border-top: 0;
+    border-color rgb(168, 175, 193);
 }
 
+#services a {
+    color: rgb(54, 215, 210);
+}
+
+#services a:hover {
+    color: #0069ff;
+    text-decoration: none;
+}
+
+#services tr td:first-of-type {
+    color: #5b6987;
+}
 /* Cta section's style */
 
 #cta {
@@ -500,6 +517,74 @@ section .h5 {
     opacity: 0.7;
 }
 
+/* Footer sections's style */
+
+footer {
+    background-color: rgb(1, 14, 40);
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+#footer-top {
+    margin-bottom: 30px;
+}
+
+#footer-top p {
+    color: white;
+    margin-bottom: 20px;
+}
+
+#footer-top ul {
+    list-style-type: none;
+    padding-left: 0px;
+    margin-bottom: 20px;
+}
+
+#footer-top li {
+    line-height: 25px;
+}
+#footer-top li a {
+    color: rgb(128, 133, 143);
+}
+
+#footer-top li a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+footer hr {
+    background-color: rgb(128, 133, 143);
+    border: 0;
+    height: 1px;
+}
+
+#footer-bottom {
+    margin-top: 20px;
+}
+
+#footer-bottom p svg {
+    vertical-align: middle;
+    margin-right: 15px;
+}
+
+#footer-bottom p {
+    color: rgb(128, 133, 143);
+}
+
+#footer-bottom ul, #footer-bottom li {
+    display: inline-block;
+}
+
+#footer-bottom a {
+    font-size: 25px;
+    padding-left: 8px;
+    line-height: 50px;
+    color: rgb(128, 133, 143);
+}
+
+#footer-bottom a:hover {
+    color: white;
+}
 @media (max-width:480px) {
     .col-xxs-10 {
         width: calc(( 100% / 12) * 10);
@@ -508,6 +593,7 @@ section .h5 {
         margin-bottom: 20px;
     }
 }
+
 @media (max-width:768px) {
     .container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header {
     margin: 0;
@@ -527,6 +613,7 @@ section .h5 {
     #devteams .box-wrapper::after {
         content: "";
     }
+
 }
 
 
