@@ -40,6 +40,12 @@ section .h5 {
     fill: #0069ff;
 }
 
+#header-top .navbar-header>ul>li>a {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: block;
+}
 #header-top {
     font-size: 12px;
 }
@@ -358,6 +364,10 @@ section .h5 {
     position: relative;
     margin-top: 20px;
     margin-bottom: 20px;
+}
+
+#design .img-wrapper img {
+    border-radius: 30px;
 }
 
 #devteams .box-wrapper>div {
