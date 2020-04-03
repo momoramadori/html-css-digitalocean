@@ -324,7 +324,7 @@ section .h5 {
 }
 
 #deploy ul {
-    padding-inline-start: 0px;
+    padding-left: 0px;
 }
 
 #deploy ul>li {
@@ -501,7 +501,7 @@ section .h5 {
 
 #services tr:first-child, #services tr:first-child th, #services tr:first-child td {
     border-top: 0;
-    border-color rgb(168, 175, 193);
+    border-color: rgb(168, 175, 193);
 }
 
 #services a {
