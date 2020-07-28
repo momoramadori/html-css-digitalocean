@@ -1,1 +1,1 @@
-#13 : Replica layout Digital Ocean (intro a flexbox)
+#13 : Replica layout Digital Ocean (bootstrap)
